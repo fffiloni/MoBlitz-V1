@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>MoBlitz</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+
+	<style>
+
+	</style>
+</head>
+<body>
+	<main>
+		<div style="display: flex;flex-direction: row-reverse;">
+			<div id="aside">
+				<div id="console">
+				</div>
+				<div id="chat">
+				</div>
+				<div id="inputChat">
+
+						<input type="text" id="animChat" placeholder="Chat with your fellows animators here ..."/>
+						<!-- <button id="sendChat" class="controlBtns" onclick="sendChat()">Send
+						</button> -->
+
+
+				</div>
+			</div>
+
+		<div id="bigbox">
+		<div id="topwindow" class="flexy">
+			<span class="titlewindow">Moblitz alpha |</span>
+			<input type="text" id="animatorName" placeholder="Enter your animator name"/>
+			<div id="colors"></div>
+			<!-- <input type="text" id="csR" placeholder="0"/>
+			<input type="text" id="csV" placeholder="0"/>
+			<input type="text" id="csB" placeholder="0"/> -->
+		</div>
+		<div id="canvascontainer" class="flexy">
+			<div id="controlscontainer">
+
+				<span class="waitingText hide">Nickel, attendons l'image suivante ...</span>
+
+				<button id="clearButton" class="controlBtns"><i class="fa fa-clone" aria-hidden="true"></i> clear
+				</button>
+				<button id="clearOnion" class="controlBtns" onclick="clearOnion()"><i class="fa fa-magic" aria-hidden="true"></i> onion : ON
+				</button>
+				<button id="showOnion" class="controlBtns hide" onclick="showOnion()"><i class="fa fa-magic" aria-hidden="true"></i> onion : OFF
+				</button>
+				<!-- <button id="updateFrame" class="controlBtns" onclick="updateFrame()"><i class="fa fa-upload" aria-hidden="true"></i> update frame
+				</button> -->
+				<button id="saveGuide" class="controlBtns" onclick="saveGuide()"><i class="fa fa-wheelchair" aria-hidden="true"></i> add guide
+				</button>
+				<button id="delGuide" class="controlBtns" onclick="delGuide()"><i class="fa fa-trash" aria-hidden="true"></i>
+ <i class="fa fa-wheelchair" aria-hidden="true"></i> del guide(s)
+				</button>
+
+				<button id="playButton" class="controlBtns" onclick="togglePlay()"><i class="fa fa-play" aria-hidden="true"></i> play</button>
+				<!-- <button id="delButton" class="controlBtns" onclick="deleteFrame()"><i class="fa fa-delete" aria-hidden="true"></i> del</button> -->
+				<button id="colButton" class="controlBtns" onclick="storeColor()">col</button>
+
+
+				<input id="onionkey" type="hidden" />
+			</div>
+
+		</div>
+		<div class="flexy1">
+			<button id="frameReady" class="controlBtns frameReady" onclick="areYouReady()"><i class="fa fa-hand-peace-o" aria-hidden="true"></i> ready
+			</button>
+			<button id="saveButton" class="controlBtns saveButton" onclick="saveDrawing()"><i class="fa fa-check-square-o" aria-hidden="true"></i> <i class="fa fa-step-forward" aria-hidden="true"></i> save & next
+			</button>
+		</div>
+		<div class="flexy">
+
+
+			<div id="drawinglist">
+
+			</div>
+			<div id="peopleReady"></div>
+
+	</div>
+</div></div></main>
+</body>
+</html>
