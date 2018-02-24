@@ -4,13 +4,29 @@ a p5js pad to make animation together in realtime
 ### Install
 `npm install`
 
-You need a firebase database to make MoBlitz work properly
+You need a firebase database to make MoBlitz work properly.
+
+On the `server.js`file, from line `59` to `66`,
+replace this
+```
+var config = {
+    apiKey: key,
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
+  };
+```
+by your firebase credentials.
 
 ### Start
 
 `node server.js`
 
 MoBlitz runs on localhost:4000
+
+
 
 ### Real-Time
 
