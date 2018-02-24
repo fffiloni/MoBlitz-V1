@@ -6,7 +6,7 @@ a p5js pad to make animation together in realtime
 
 You need a firebase database to make MoBlitz work properly.
 
-On the `server.js`file, from line `59` to `66`,
+On the `./public/sketch.js`file, from line `59` to `66`,
 replace this
 ```
 var config = {
@@ -18,7 +18,7 @@ var config = {
     messagingSenderId: ""
   };
 ```
-by your firebase credentials.
+with your firebase credentials.
 
 ### Start
 
