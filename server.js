@@ -6,7 +6,7 @@ var server = app.listen(process.env.PORT || 4000);
 app.use(express.static('public'));
 
 
-console.log("My socket server is running");
+console.log("Socket server for MoBlit is running.");
 // require and load dotenv
 var dotenv = require('dotenv');
 dotenv.config({path: __dirname + '/.env'});

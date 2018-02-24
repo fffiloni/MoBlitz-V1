@@ -30,4 +30,4 @@ MoBlitz runs on localhost:4000
 
 ### Real-Time
 
-To make it really in realtime and play with your fellows animators friends, you need to push it on a server, using a service Heroku for example.
+To make it really in realtime and play with your fellows animators friends, you need to push it on a server, using a service like Heroku for example.
