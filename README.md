@@ -1,4 +1,4 @@
-# MoBlitz
+# MoBlitz - Version 1
 a p5js pad to make animation together in realtime
 
 ### Install
